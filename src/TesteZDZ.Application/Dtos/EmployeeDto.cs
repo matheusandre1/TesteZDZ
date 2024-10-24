@@ -1,9 +1,9 @@
 ﻿using TesteZDZ.Domain.Base;
 using TesteZDZ.Domain.Enums;
 
-namespace TesteZDZ.Domain.Entities
+namespace TesteZDZ.Application.Dtos
 {
-    public  class Employee : BaseEntity
+    public  class EmployeeDto : BaseEntity
     {
         public string Name { get; set; }
         public string LastName { get; set; }

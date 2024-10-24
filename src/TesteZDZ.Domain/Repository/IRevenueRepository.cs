@@ -6,6 +6,6 @@ namespace TesteZDZ.Domain.Repository
 {
     public  interface IRevenueRepository : IRepository<Revenue>
     {
-        Task<Revenue> SearchByPaymentMethod(PaymentMethod paymentMethod);
+        Task<List<Revenue>> SearchByPaymentMethod(PaymentMethod paymentMethod);
     }
 }

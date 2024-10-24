@@ -5,6 +5,6 @@ namespace TesteZDZ.Domain.Repository
 {
     public interface IProductRepository : IRepository<Product>
     {
-        Task<Product> SearchBySupplier(string nameSupplier);
+        Task<List<Product>> SearchBySupplier(string nameSupplier);
     }
 }

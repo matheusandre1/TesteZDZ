@@ -6,7 +6,7 @@ namespace TesteZDZ.Domain.Repository
 {
     public  interface IExpenseRepository : IRepository<Expense>
     {
-        Task<Expense> SearchExpenseByCategory (Category category);
-        Task<Expense> SearchExpenseByPaymentMethod (PaymentMethod paymentMethod);
+        Task <List<Expense>> SearchExpenseByCategory (Category category);
+        Task<List<Expense>> SearchExpenseByPaymentMethod (PaymentMethod paymentMethod);
     }
 }

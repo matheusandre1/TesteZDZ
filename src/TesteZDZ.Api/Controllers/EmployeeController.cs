@@ -96,7 +96,7 @@ namespace TesteZDZ.Api.Controllers
         }
 
         [HttpDelete("deletebyId")]
-        public async Task<IActionResult> DeleteById([FromBody] Guid id)
+        public async Task<IActionResult> DeleteById([FromQuery] Guid id)
         {
             try
             {

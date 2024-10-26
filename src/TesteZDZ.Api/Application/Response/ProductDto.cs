@@ -9,5 +9,6 @@
         public decimal Price { get; set; }
         public DateTime Validity { get; set; }
         public string Supplier { get; set; } = string.Empty;
+        public DateTime DateRegister { get; set; }
     }
 }

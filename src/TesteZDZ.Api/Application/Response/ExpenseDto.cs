@@ -9,5 +9,6 @@ namespace TesteZDZ.Api.Application.Response
         public Category Category { get; set; }
         public decimal Value { get; set; }
         public PaymentMethod PaymentMethod { get; set; }
+        public DateTime DateRegister { get; set; }
     }
 }

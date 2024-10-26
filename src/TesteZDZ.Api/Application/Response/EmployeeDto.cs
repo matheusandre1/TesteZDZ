@@ -14,6 +14,7 @@ namespace TesteZDZ.Api.Application.Response
             public decimal Salary { get; set; }
             public string Address { get; set; }
             public TypeOfContract TypeOfContract { get; set; }
-        }
+            public DateTime DateRegister { get; set; }
+    }
     
 }

@@ -1,6 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using System.Runtime.CompilerServices;
 using TesteZDZ.Domain.Repository;
 using TesteZDZ.Infrastructure.Context;
 using TesteZDZ.Infrastructure.Database;

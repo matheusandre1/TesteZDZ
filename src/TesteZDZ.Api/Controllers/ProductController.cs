@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TesteZDZ.Application.Dtos;
 using TesteZDZ.Application.Interfaces;
-using TesteZDZ.Application.Services;
-using TesteZDZ.Domain.Repository;
 
 namespace TesteZDZ.Api.Controllers
 {
@@ -33,7 +31,7 @@ namespace TesteZDZ.Api.Controllers
         }
 
         [HttpGet("getAll")]
-        public async Task<IActionResult> GetExpenseAll()
+        public async Task<IActionResult> GetProductAll()
         {
             try
             {
@@ -68,6 +66,7 @@ namespace TesteZDZ.Api.Controllers
         {
             try
             {
+                
                 var expense = await _productService.GetByIdAsync(id);
 
                 return Ok(expense);
@@ -79,13 +78,13 @@ namespace TesteZDZ.Api.Controllers
         }
 
         [HttpPut("update")]
-        public async Task<IActionResult> UpdateEmployee([FromQuery] Guid id, CreateProductDto dto)
+        public async Task<IActionResult> UpdateProduct([FromQuery] Guid id, CreateProductDto dto)
         {
             try
             {
-                var updateExpense = await _productService.UpdateProductAsync(id, dto);
+                var updateProduct = await _productService.UpdateProductAsync(id, dto);
 
-                return Ok(updateExpense);
+                return Ok(updateProduct);
             }
             catch
             {
@@ -98,6 +97,7 @@ namespace TesteZDZ.Api.Controllers
         {
             try
             {
+                
                 var getSupplier = await _productService.SearchBySupplier(supplier);
 
                 return Ok(getSupplier);

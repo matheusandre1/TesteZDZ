@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using TesteZDZ.Domain.Base;
 using TesteZDZ.Domain.Entities;
 using TesteZDZ.Domain.Enums;
 using TesteZDZ.Domain.Repository;

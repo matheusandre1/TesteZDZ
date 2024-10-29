@@ -32,7 +32,7 @@ namespace TesteZDZ.Application.Services
         {
             var product = _productRepository.GetByIdAsync(id);
 
-            await _productRepository.DeleteAsync(id);
+            await _productRepository.DeleteAsync(id);            
 
             return null;
         }

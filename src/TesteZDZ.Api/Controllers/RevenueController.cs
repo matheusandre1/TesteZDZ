@@ -49,7 +49,7 @@ namespace TesteZDZ.Api.Controllers
         }
 
         [HttpDelete("deleteById")]
-        public async Task<IActionResult> DeleteById([FromBody] Guid id)
+        public async Task<IActionResult> DeleteById([FromQuery] Guid id)
         {
             try
             {
@@ -79,7 +79,7 @@ namespace TesteZDZ.Api.Controllers
         }
 
         [HttpPut("update")]
-        public async Task<IActionResult> UpdateRevenue([FromQuery] Guid id, CreateRevenueDto dto)
+        public async Task<IActionResult> UpdateRevenue([FromQuery] Guid id,[FromBody] CreateRevenueDto dto)
         {
             try
             {

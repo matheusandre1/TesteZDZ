@@ -24,7 +24,7 @@ namespace TesteZDZ.Api.Controllers
             {
                 var createProduct = await _productService.AddProductAsync(productDto);
 
-                return Created();
+                return Ok(createProduct);
             }
             catch (Exception ex)
             {
@@ -49,11 +49,11 @@ namespace TesteZDZ.Api.Controllers
         }
 
         [HttpDelete("deleteById")]
-        public async Task<IActionResult> DeleteById([FromBody] Guid id)
+        public async Task<IActionResult> DeleteById([FromQuery] Guid id)
         {
             try
             {
-                var expense = await _productService.DeleteProductAsync(id);
+                var product = await _productService.DeleteProductAsync(id);                
 
                 return NoContent();
             }

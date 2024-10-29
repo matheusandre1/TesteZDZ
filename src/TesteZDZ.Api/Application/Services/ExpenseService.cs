@@ -63,7 +63,7 @@ namespace TesteZDZ.Application.Services
                 throw new Exception();
             }
 
-            return _mapper.Map<List<ExpenseDto>>(expense);
+            return _mapper.Map<List<ExpenseDto>>(expense.ToList());
         }
 
         public async Task<List<ExpenseDto>> SearchExpenseByPaymentMethod(PaymentMethod paymentMethod)
@@ -71,7 +71,7 @@ namespace TesteZDZ.Application.Services
             var expense = await _expenseRepository.SearchExpenseByPaymentMethod(paymentMethod);
 
 
-            return _mapper.Map<List<ExpenseDto>>(expense);
+            return _mapper.Map<List<ExpenseDto>>(expense.ToList());
         }
 
         public async Task<ExpenseDto> UpdateExpenseAsync(Guid id, CreateExpenseDto expenseDto)

@@ -31,7 +31,7 @@ namespace TesteZDZ.Api.Controllers
 
                 var newEmployee = await _expenseService.CreateExpenseAsync(expenseDto);
 
-                return Ok();
+                return Ok(newEmployee);
             }
             catch (Exception ex)
             {
@@ -128,7 +128,7 @@ namespace TesteZDZ.Api.Controllers
             {
                 var payment = await _expenseService.SearchExpenseByPaymentMethod(paymentMethod);
 
-                return Ok();
+                return Ok(payment);
             }
             catch(Exception ex)
             {

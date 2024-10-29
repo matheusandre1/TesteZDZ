@@ -114,7 +114,7 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Receita',
+          title: 'Receitas',
           to: '/receitas'
         },
         {

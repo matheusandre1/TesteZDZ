@@ -95,9 +95,9 @@ Aplicação Web De Gerenciamento De uma Empresa
 | `category` | `enum` | O categoria da despesa tecnology = 0,
 |  |  | operacional = 1, administrative = 2,  financial = 3 e |
  | |  | sales = 4. |
-|
-| `value` | `decimal ` | O valor  da despesa |
+| `value` | `decimal` | O valor  da despesa |
 | `paymentMethod` | `enum` | O metodo de pagamente da despesa |
+
 
 
 #### Retorna uma Despesa
@@ -137,9 +137,9 @@ Aplicação Web De Gerenciamento De uma Empresa
 | `category` | `enum` | O categoria da despesa tecnology = 0,
 |  |  | operacional = 1, administrative = 2,  financial = 3 e |
  | |  | sales = 4. |
-|
-| `value` | `decimal ` | O valor  da despesa que voce quer atualizar|
-| `paymentMethod` | `enum` | O metodo de pagamente da despesa que voce quer atualizar |
+| `value` | `decimal` | O valor  da despesa que voce quer atualizar|
+| `paymentMethod` | `enum` |O metodo de pagamente da despesa que voce quer atualizar|
+
 
 
 #### Busca a Categoria Quer voce Quer da Despesa
@@ -227,7 +227,7 @@ Aplicação Web De Gerenciamento De uma Empresa
 |
 
 
-#### Cadastra O Receita
+#### Cadastra A Receita
 
 ```http
   Post /api/Revenue/createRevenue
